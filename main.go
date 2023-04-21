@@ -9,7 +9,7 @@ import (
 
 func main() {
 	//reading the video
-	footage, err := gocv.VideoCaptureFile("assets/highway.mp4")
+	footage, err := gocv.VideoCaptureFile("assets/video.mp4")
 
 	if err != nil {
 		fmt.Println("Error in reading video footage")
