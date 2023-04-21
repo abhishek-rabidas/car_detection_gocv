@@ -8,8 +8,11 @@ import (
 )
 
 func main() {
-	//reading the video
-	footage, err := gocv.VideoCaptureFile("assets/video.mp4")
+	fmt.Print("Enter the video footage filename: ")
+	var filename string
+	fmt.Scanf("%s", &filename)
+
+	footage, err := gocv.VideoCaptureFile("assets/" + filename)
 
 	if err != nil {
 		fmt.Println("Error in reading video footage")
